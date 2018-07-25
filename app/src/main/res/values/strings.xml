@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GCUEvents</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Full Name</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered? Login Here.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Full Name</string>
+    <string name="event_name">Event Name</string>
+    <string name="description">Give a short description of the event.</string>
+    <string name="event_location">Event Location</string>
+    <string name="search_for_an_address">Search for an Address</string>
+    <string name="create_event">Create Event</string>
+    <string name="start_date_time">Start Date/Time</string>
+    <string name="event_finish_date_time">Event Date</string>
+    <string name="finish_date_time">Event Start Time</string>
+    <string name="set_start_date_time">Set Event Date</string>
+    <string name="set_finish_date_time">Set Event Time</string>
+</resources>

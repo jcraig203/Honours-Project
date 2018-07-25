@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="vertical"
+    android:paddingRight="?android:attr/scrollbarSize" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="6dip"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/datetimehead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/titleTV"
+            android:layout_below="@id/titleTV"
+            android:textStyle="bold"
+            android:text="Date/Time" />
+
+        <TextView
+            android:id="@+id/datetimeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datetimehead"
+            android:layout_alignStart="@id/datetimehead" />
+
+        <TextView
+            android:id="@+id/deschead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/datetimeTV"
+            android:layout_below="@id/datetimeTV"
+            android:textStyle="bold"
+            android:text="Description" />
+
+        <TextView
+            android:id="@+id/descriptionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deschead"
+            android:layout_alignStart="@id/deschead" />
+
+        <TextView
+            android:id="@+id/lochead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/descriptionTV"
+            android:layout_below="@id/descriptionTV"
+            android:textStyle="bold"
+            android:text="Location" />
+
+        <TextView
+            android:id="@+id/locationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lochead"
+            android:layout_alignStart="@id/lochead"/>
+
+        <Button
+            android:id="@+id/btnAttendEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/locationTV"
+            android:layout_below="@id/locationTV"
+            android:layout_marginTop="40dip"
+            android:background="@color/btn_login"
+            android:text="Attend Event"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnAttending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/locationTV"
+            android:layout_below="@id/locationTV"
+            android:layout_marginTop="40dip"
+            android:background="#333534"
+            android:text="You're already signed up!"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <com.uber.sdk.android.rides.RideRequestButton
+            android:id="@+id/requestButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/btnAttending"
+            android:layout_below="@id/btnAttending"
+            android:layout_marginTop="40dip"/>
+    </RelativeLayout>
+</LinearLayout>

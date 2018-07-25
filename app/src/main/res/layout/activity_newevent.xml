@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="511dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <EditText
+                android:id="@+id/eventTitle"
+                android:maxLength="254"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/event_name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint" />
+
+            <EditText
+                android:id="@+id/eventDescription"
+                android:maxLength="254"
+                android:layout_width="fill_parent"
+                android:layout_height="168dp"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/description"
+                android:padding="10dp"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint" />
+
+
+            <TextView
+                android:id="@+id/eventLocation"
+                android:maxLength="254"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/event_location"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint" />
+
+            <Button
+                android:id="@+id/getAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dip"
+                android:background="@color/btn_login_bg"
+                android:text="@string/search_for_an_address"
+                android:textColor="@color/btn_login" />
+
+            <Button
+                android:id="@+id/setStart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/btn_login_bg"
+                android:text="@string/set_start_date_time"
+                android:textColor="@color/btn_login" />
+
+            <Button
+                android:id="@+id/setFinish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:background="@color/btn_login_bg"
+                android:text="@string/set_finish_date_time"
+                android:textColor="@color/btn_login" />
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="@color/btn_login"
+                android:text="@string/create_event"
+                android:textColor="@color/btn_login_bg" />
+
+            <!-- Link to Login Screen -->
+
+        </LinearLayout>
+
+    </LinearLayout>
